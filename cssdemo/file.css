@@ -5,8 +5,10 @@ body {
     line-height: pt;
     letter-spacing: -5px;
     font-family: Futura, Arial, sans-serif;
-    
+    cursor: pointer;
 }
+
+
 
  .circle {    
   position: fixed;
@@ -26,6 +28,8 @@ body {
      top: 140px;
      left: 22px;
  }
+ 
+ 
 
 .container {
     width: 150px;
