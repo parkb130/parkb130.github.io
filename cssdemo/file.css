@@ -5,7 +5,19 @@ body {
     line-height: pt;
     letter-spacing: -5px;
     font-family: Futura, Arial, sans-serif;
+    
 }
+
+ .circle {    
+  position: fixed;
+  width: 0; 
+  height: 0; 
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  
+  border-top: 75px solid white;
+ }
+
 
 .container {
     width: 150px;
