@@ -1,5 +1,5 @@
 body {
-    background-color: #20efcf;
+    background-color: #1e90ff;
     color: white;
     font-size: 100px;
     line-height: pt;
@@ -15,7 +15,7 @@ body {
 }
 
 .ball {
-    width: 300px;
+    width: 1000px;
     height: 50px;
     margin: 50px;
     border-radius: 50px;
