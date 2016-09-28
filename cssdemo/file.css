@@ -12,10 +12,10 @@ body {
   position: fixed;
   width: 0; 
   height: 0; 
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
   
-  border-top: 75px solid white;
+  border-top: 70px solid white;
  }
 
 
