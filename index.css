@@ -1,5 +1,4 @@
-body {
-    background-size: 250px 250px;
+div {
+    background-size: 100px 100px;
     background-repeat: no-repeat;
-    background-position: 25% 50%;
 }
