@@ -1,5 +1,7 @@
-.pos:nth-child(7n + 2), .pos:nth-child(7n + 4), .pos:nth-child(7n + 6) {
-  color: #f28435;
+.pos:nth-child(7n + 2),
+.pos:nth-child(7n + 4),
+.pos:nth-child(7n + 6) {
+  color: hotpink;
 }
 
 div, :after {
@@ -9,11 +11,11 @@ div, :after {
 .pos {
   top: 50%;
   left: 50%;
-  perspective: 10em;
-  color: #b3a23a;
+  perspective: 6em;
+  color: black;
 }
 .pos:nth-child(1) {
-  margin: -9em -18em;
+  margin: -10em -18em;
 }
 .pos:nth-child(1) .cube, .pos:nth-child(1) :after {
   animation-delay: 0s;
@@ -25,7 +27,7 @@ div, :after {
   animation-delay: 1.14286s;
 }
 .pos:nth-child(3) {
-  margin: -9em -6em;
+  margin: -10em -6em;
 }
 .pos:nth-child(3) .cube, .pos:nth-child(3) :after {
   animation-delay: 2.28571s;
@@ -37,7 +39,7 @@ div, :after {
   animation-delay: 3.42857s;
 }
 .pos:nth-child(5) {
-  margin: -9em 6em;
+  margin: -10em 6em;
 }
 .pos:nth-child(5) .cube, .pos:nth-child(5) :after {
   animation-delay: 4.57143s;
@@ -49,7 +51,7 @@ div, :after {
   animation-delay: 5.71429s;
 }
 .pos:nth-child(7) {
-  margin: -9em 18em;
+  margin: -10em 18em;
 }
 .pos:nth-child(7) .cube, .pos:nth-child(7) :after {
   animation-delay: 6.85714s;
@@ -103,7 +105,7 @@ div, :after {
   animation-delay: 0.57143s;
 }
 .pos:nth-child(16) {
-  margin: 3em -12em;
+  margin: 4em -12em;
 }
 .pos:nth-child(16) .cube, .pos:nth-child(16) :after {
   animation-delay: 1.71429s;
@@ -115,7 +117,7 @@ div, :after {
   animation-delay: 2.85714s;
 }
 .pos:nth-child(18) {
-  margin: 3em 0em;
+  margin: 4em 0em;
 }
 .pos:nth-child(18) .cube, .pos:nth-child(18) :after {
   animation-delay: 4s;
@@ -127,7 +129,7 @@ div, :after {
   animation-delay: 5.14286s;
 }
 .pos:nth-child(20) {
-  margin: 3em 12em;
+  margin: 4em 12em;
 }
 .pos:nth-child(20) .cube, .pos:nth-child(20) :after {
   animation-delay: 6.28571s;
@@ -139,7 +141,7 @@ div, :after {
   animation-delay: 7.42857s;
 }
 .pos:nth-child(22) {
-  margin: 9em -18em;
+  margin: 10em -18em;
 }
 .pos:nth-child(22) .cube, .pos:nth-child(22) :after {
   animation-delay: 0.85714s;
@@ -151,7 +153,7 @@ div, :after {
   animation-delay: 2s;
 }
 .pos:nth-child(24) {
-  margin: 9em -6em;
+  margin: 10em -6em;
 }
 .pos:nth-child(24) .cube, .pos:nth-child(24) :after {
   animation-delay: 3.14286s;
@@ -163,7 +165,7 @@ div, :after {
   animation-delay: 4.28571s;
 }
 .pos:nth-child(26) {
-  margin: 9em 6em;
+  margin: 10em 6em;
 }
 .pos:nth-child(26) .cube, .pos:nth-child(26) :after {
   animation-delay: 5.42857s;
@@ -175,7 +177,7 @@ div, :after {
   animation-delay: 6.57143s;
 }
 .pos:nth-child(28) {
-  margin: 9em 18em;
+  margin: 10em 18em;
 }
 .pos:nth-child(28) .cube, .pos:nth-child(28) :after {
   animation-delay: 7.71429s;
