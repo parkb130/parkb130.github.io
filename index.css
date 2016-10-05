@@ -1,4 +1,4 @@
-div {
-    background-size: 100px 100px;
+body {
+    background-size: cover;
     background-repeat: no-repeat;
 }
