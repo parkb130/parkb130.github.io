@@ -12,7 +12,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-color: white;
+  background-color: lightgray;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   -webkit-perspective-origin: bottom;
