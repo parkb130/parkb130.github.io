@@ -12,7 +12,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-color: #222329;
+  background-color: lightblue;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   -webkit-perspective-origin: bottom;
@@ -49,51 +49,61 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+          background-image: url('firstface150.gif')
 }
 .square:nth-child(2) {
   background-color: rgba(255, 255, 255, 0.725);
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
+          background-image: url('firstface150.gif')
 }
 .square:nth-child(3) {
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
+          background-image: url('firstface150.gif')
 }
 .square:nth-child(4) {
   background-color: rgba(255, 255, 255, 0.675);
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
+          background-image: url('firstface150.gif')
 }
 .square:nth-child(5) {
   background-color: rgba(255, 255, 255, 0.65);
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
+          background-image: url('firstface150.gif')
 }
 .square:nth-child(6) {
   background-color: rgba(255, 255, 255, 0.625);
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+          background-image: url('secface.gif')
 }
 .square:nth-child(7) {
   background-color: rgba(255, 255, 255, 0.6);
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
+          background-image: url('secface.gif')
 }
 .square:nth-child(8) {
   background-color: rgba(255, 255, 255, 0.575);
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
+          background-image: url('secface.gif')
 }
 .square:nth-child(9) {
   background-color: rgba(255, 255, 255, 0.55);
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
+          background-image: url('secface.gif')
 }
 .square:nth-child(10) {
   background-color: rgba(255, 255, 255, 0.525);
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
+          background-image: url('secface.gif')
 }
 .square:nth-child(11) {
   background-color: rgba(255, 255, 255, 0.5);
@@ -124,52 +134,72 @@ body {
   background-color: rgba(255, 255, 255, 0.375);
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
+          background-image: url('thirdface.gif')
 }
 .square:nth-child(17) {
   background-color: rgba(255, 255, 255, 0.35);
   -webkit-animation-delay: 3.2s;
           animation-delay: 3.2s;
+          background-image: url('thirdface.gif')
 }
 .square:nth-child(18) {
   background-color: rgba(255, 255, 255, 0.325);
   -webkit-animation-delay: 3.4s;
           animation-delay: 3.4s;
+          background-image: url('thirdface.gif')
 }
 .square:nth-child(19) {
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-animation-delay: 3.6s;
           animation-delay: 3.6s;
+          background-image: url('thirdface.gif')
 }
 .square:nth-child(20) {
   background-color: rgba(255, 255, 255, 0.275);
   -webkit-animation-delay: 3.8s;
           animation-delay: 3.8s;
+          background-image: url('thirdface.gif')
 }
 .square:nth-child(21) {
   background-color: rgba(255, 255, 255, 0.25);
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
+          background-image: url('fourthface.gif')
 }
 .square:nth-child(22) {
   background-color: rgba(255, 255, 255, 0.225);
   -webkit-animation-delay: 4.2s;
           animation-delay: 4.2s;
+          background-image: url('fourthface.gif')
 }
 .square:nth-child(23) {
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-animation-delay: 4.4s;
           animation-delay: 4.4s;
+          background-image: url('fourthface.gif')
 }
 .square:nth-child(24) {
   background-color: rgba(255, 255, 255, 0.175);
   -webkit-animation-delay: 4.6s;
           animation-delay: 4.6s;
+          background-image: url('fourthface.gif')
 }
 .square:nth-child(25) {
   background-color: rgba(255, 255, 255, 0.15);
   -webkit-animation-delay: 4.8s;
           animation-delay: 4.8s;
+          background-image: url('fourthface.gif')
 }
+
+.square:hover {
+	background-position: -250px 0;
+
+}
+
+.square:active {
+	background-position: -500px 0;
+}
+
 @-webkit-keyframes rotate {
   25% {
     -webkit-transform: rotateY(-180deg);
