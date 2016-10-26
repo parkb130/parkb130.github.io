@@ -8,16 +8,21 @@
   top: 50%;
   left: 50%;
   transition: all 2s;
+  -webkit-animation-name: asdf; 
+  -webkit-animation-duration: 5s; 
+  -webkit-animation-iteration-count: infinite;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+
 }
 
 .logo:hover {
     background-image: url("blackhexagon.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 537px;
-    height: 620px;
+    background-position: absolute;
+    width: 536px;
+    height: 619px;
 } 
 	
 
@@ -32,3 +37,23 @@
   fill: rgba(67, 117, 178, 0.15);
 }
 
+@-webkit-keyframes asdf {
+    0% {
+        color: red;
+    }
+    20% {
+        color: orange;
+    }
+    40% {
+        color: purple;
+    }
+    60% {
+        color: blue;
+    }
+    80% {
+        color: lime;
+    }
+    100% {
+        color: red;
+    }
+}
