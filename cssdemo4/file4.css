@@ -1,6 +1,10 @@
 .hero {
   height: 100vh;
-  background-color: #69ACFF;
+  -webkit-animation: color_change 1s infinite alternate;
+  -moz-animation: color_change 1s infinite alternate;
+  -ms-animation: color_change 1s infinite alternate;
+  -o-animation: color_change 1s infinite alternate;
+  animation: color_change 1s infinite alternate;
 }
 
 .logo {
@@ -8,9 +12,6 @@
   top: 50%;
   left: 50%;
   transition: all 2s;
-  -webkit-animation-name: asdf; 
-  -webkit-animation-duration: 5s; 
-  -webkit-animation-iteration-count: infinite;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 
@@ -37,23 +38,23 @@
   fill: rgba(67, 117, 178, 0.15);
 }
 
-@-webkit-keyframes asdf {
-    0% {
-        color: red;
-    }
-    20% {
-        color: orange;
-    }
-    40% {
-        color: purple;
-    }
-    60% {
-        color: blue;
-    }
-    80% {
-        color: lime;
-    }
-    100% {
-        color: red;
-    }
+@-webkit-keyframes color_change {
+	from { background-color: purple; }
+	to { background-color: #66CDAA; }
+}
+@-moz-keyframes color_change {
+	from { background-color: purple; }
+	to { background-color: #66CDAA; }
+}
+@-ms-keyframes color_change {
+	from { background-color: purple; }
+	to { background-color: #66CDAA; }
+}
+@-o-keyframes color_change {
+	from { background-color: purple; }
+	to { background-color: #66CDAA; }
+}
+@keyframes color_change {
+	from { background-color: purple; }
+	to { background-color: #66CDAA; }
 }
