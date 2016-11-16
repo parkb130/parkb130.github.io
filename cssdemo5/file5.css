@@ -23,15 +23,6 @@ body:active [filter] {
   animation: back-color 3s infinite linear;
 }
 
-@keyframes draw {
-  from {
-    stroke-dashoffset: 388.5;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 @keyframes stroke-color {
   0% {
     stroke: hsl( 0, 100%, 70%);
