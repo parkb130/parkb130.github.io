@@ -20,7 +20,7 @@ body:active [filter] {
 }
 
 :root {
-  animation: back-color 11s infinite linear;
+  animation: back-color 3s infinite linear;
 }
 
 @keyframes draw {
