@@ -9,8 +9,6 @@ var StaggeredMotion = _ReactMotion.StaggeredMotion;
 var Motion = _ReactMotion.Motion;
 var spring = _ReactMotion.spring;
 
-//Circled
-
 var Circled = React.createClass({
   displayName: "Circled",
   getInitialState: function getInitialState() {
@@ -263,7 +261,7 @@ function PrintArea(props) {
       React.createElement(
         "div",
         { className: "sm-top slide" },
-        ""
+        "----------------------------------"
       )
     ),
     React.createElement(
@@ -275,7 +273,7 @@ function PrintArea(props) {
         React.createElement(
           "h3",
           null,
-          ""
+          "//"
         )
       ),
       React.createElement(
