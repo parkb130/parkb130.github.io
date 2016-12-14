@@ -224,7 +224,7 @@ function Text(props) {
     React.createElement(
       "button",
       { className: "slide" },
-      ""
+      ">"
     )
   );
 }
