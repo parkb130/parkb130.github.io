@@ -216,7 +216,7 @@ function Text(props) {
     React.createElement(
       "h2",
       null,
-      "Lorem Ipsum"
+      "Composition"
     ),
     React.createElement(
       "p",
