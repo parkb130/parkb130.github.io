@@ -25,8 +25,8 @@ body, html {
   position: absolute;
   z-index: 99;
   color: #fff;
-  -webkit-transform: translateY(-75%) translateX(-50%);
-          transform: translateY(-75%) translateX(-50%);
+  -webkit-transform: translateY(-85%) translateX(-50%);
+          transform: translateY(-85%) translateX(-50%);
   top: 50%;
   left: 50%;
   font-family: 'Bahiana', cursive;
