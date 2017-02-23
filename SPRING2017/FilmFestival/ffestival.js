@@ -2,7 +2,7 @@ var Expand = (function() {
   var tile = $('.strips__strip');
   var tileLink = $('.strips__strip > .strip__content');
   var tileText = tileLink.find('.strip__inner-text');
-  var stripClose = $('.strip__close');
+  var stripClose = ($'.strip__close');
 
   var expanded = false;
 
@@ -44,6 +44,6 @@ var Expand = (function() {
     init: init
   };
 
-}());
+});
 
 Expand.init();
