@@ -34,7 +34,7 @@
   left: 80vw;
 }
 .strips__strip:nth-child(1) .strip__content {
-  background: #E9724C;
+  background: #244F75;
   -webkit-transform: translate3d(-100%, 0, 0);
           transform: translate3d(-100%, 0, 0);
   -webkit-animation-name: strip1;
@@ -43,7 +43,7 @@
           animation-delay: 0.1s;
 }
 .strips__strip:nth-child(2) .strip__content {
-  background: #FFC857;
+  background: #60BFBF;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-animation-name: strip2;
@@ -52,7 +52,7 @@
           animation-delay: 0.2s;
 }
 .strips__strip:nth-child(3) .strip__content {
-  background: #E5446D;
+  background: #8C4B7E;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
   -webkit-animation-name: strip3;
@@ -61,7 +61,7 @@
           animation-delay: 0.3s;
 }
 .strips__strip:nth-child(4) .strip__content {
-  background: #3AF4D5;
+  background: #F8BB44;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-animation-name: strip4;
@@ -70,7 +70,7 @@
           animation-delay: 0.4s;
 }
 .strips__strip:nth-child(5) .strip__content {
-  background: #75D4F2;
+  background: #F24B4B;
   -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0);
   -webkit-animation-name: strip5;
@@ -326,8 +326,7 @@
             transform: translate3d(0, 0, 0);
   }
 }
-
-
+/* Demo purposes */
 body {
   font-family: 'Shadows Into Light', cursive;
   -webkit-font-smoothing: antialiased;
@@ -335,8 +334,7 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-weight: 300;
 }
 
