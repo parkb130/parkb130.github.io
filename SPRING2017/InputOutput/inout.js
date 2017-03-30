@@ -33,14 +33,16 @@ var nodes = [
                     {"name": "CLICK"},
                     {"name": "AND"},
                     {"name": "DRAG"},
-                    {"name": "HAVE FUN" }
+                    {"name": "HAVE FUN" },
+                    {"name": "HUEHUE" }
   ]
 
 var links = [
                 {source: nodes[1], target: nodes[0]},
                   {source: nodes[2], target: nodes[0]},
                   {source: nodes[3], target: nodes[0]},
-                  {source: nodes[4], target: nodes[0]}
+                  {source: nodes[4], target: nodes[0]},
+                  {source: nodes[5], target: nodes[0]}
 ]
               
 
@@ -152,6 +154,7 @@ force.on("tick", function(e) {
        .attr("y1", function(d)   { return d.source.y; })
        .attr("x2", function(d)   { return d.target.x; })
        .attr("y2", function(d)   { return d.target.y; })
+       
 });
 
 force.start();
