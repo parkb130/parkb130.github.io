@@ -8,6 +8,7 @@ canvas {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: -166.5px 0 0 -333px;
+  margin: -333px 0 0 -666px;
   border: 1px solid black;
 }
+

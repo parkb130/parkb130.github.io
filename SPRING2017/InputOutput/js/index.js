@@ -29,8 +29,8 @@
 	function Fly() {
 		this.x = random() * canvas.width * 0.8;
 		this.y = random() * canvas.height * 0.8;
-		this.size = 15;
-		this.speed = random() * 3;
+		this.size = random() * (35 - 15) + 15;
+		this.speed = random() * (6 - 3.5) + 3.5;
 		this.angle = toRadians(random() * 360);
 		this.killed = false;
 		this.fade = 1;
@@ -88,11 +88,10 @@
 				var flyFactor = random() * 7;
 				ctx.beginPath();
 				ctx.fillStyle = 'rgba(0,0,0,0.2)';
-				ctx.rect(-10 - this.halfSize, -flyFactor + 7 - this.halfSize, this.size, this.size / 2);
-				ctx.rect(+10 - this.halfSize, -flyFactor + 7 - this.halfSize, this.size, this.size / 2);
 				ctx.fill();
 				ctx.closePath();
 				ctx.restore();
+				//ctx.fillText('F1ies K!ll3d: ' + count, 66, 33);
 			}
 
 		};
@@ -102,7 +101,7 @@
 		var now = new Date().getTime();
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		ctx.fillStyle = 'rgb(' + (count * 20 < 255 ? (count * 20) : 255) + ',0,0)';
-		ctx.fillText('F1ies K!ll3d: ' + count, 66, 33);
+	
 		flies.forEach(function (fly, i) {
 			moveObj(fly);
 
@@ -117,8 +116,12 @@
 			fly.draw(now);
 			if (fly.fade <= 0) {
 				flies.splice(i, 1);
-				flies.push(new Fly());
+				
 				count++;
+				if(count == 15 )
+{
+	window.location.href = "http://ajournalofmusicalthings.com/wp-content/uploads/YouWin.png";
+}
 				flies.forEach(function (_fly) {
 					_fly.speed += count * 0.01;
 				})
@@ -129,7 +132,7 @@
 		requestAnimationFrame(render);
 	}
 
-	var i = 10;
+	var i = 15;
 	while (i--) {
 		flies.push(new Fly());
 	}
@@ -146,13 +149,8 @@
 	});
 
 	window.onload = function () {
-		ctx.font = '28px "Hanalei Fill"';
-		ctx.textAlign = 'center';
-		ctx.fillStyle = 'rgb(255,0,0)';
-		ctx.fillText('K!ll th3m 4ll!', 333, 166.5);
-		ctx.font = '18px "Hanalei Fill"';
 
-		setTimeout(render, 3000);
+		setTimeout(render, 0);
 	};
 
 
