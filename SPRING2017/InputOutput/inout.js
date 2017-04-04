@@ -33,8 +33,9 @@ var nodes = [
                     {"name": "CLICK"},
                     {"name": "AND"},
                     {"name": "DRAG"},
-                    {"name": "HAVE FUN" },
-                    {"name": "HUEHUE" }
+                    {"name": "HAVE FUN"},
+                    {"name": "HUEHUE"},
+                    {"name": "BALLS" }
   ]
 
 var links = [
@@ -42,7 +43,8 @@ var links = [
                   {source: nodes[2], target: nodes[0]},
                   {source: nodes[3], target: nodes[0]},
                   {source: nodes[4], target: nodes[0]},
-                  {source: nodes[5], target: nodes[0]}
+                  {source: nodes[5], target: nodes[0]},
+                  {source: nodes[6], target: nodes[0]}
 ]
               
 
@@ -56,7 +58,7 @@ var vis = d3.select("body")
 var force = d3.layout.force()
     .nodes(nodes)
     .links([])
-    .gravity(0.1)
+    .gravity(.1)
     .charge(-1000)
     .size([w, h]);
 
@@ -154,7 +156,6 @@ force.on("tick", function(e) {
        .attr("y1", function(d)   { return d.source.y; })
        .attr("x2", function(d)   { return d.target.x; })
        .attr("y2", function(d)   { return d.target.y; })
-       
 });
 
 force.start();
