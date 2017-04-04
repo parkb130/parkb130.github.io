@@ -30,12 +30,12 @@ var palette = {
 
 var nodes = [
                 {"name": "INPUT & OUTPUT" },
-                    {"name": "CLICK"},
-                    {"name": "AND"},
-                    {"name": "DRAG"},
-                    {"name": "HAVE FUN"},
-                    {"name": "HUEHUE"},
-                    {"name": "BALLS" }
+                    {"name": "#1"},
+                    {"name": "#2"},
+                    {"name": "#3"},
+                    {"name": "#4"},
+                    {"name": "#5"},
+                    {"name": "#6" }
   ]
 
 var links = [
