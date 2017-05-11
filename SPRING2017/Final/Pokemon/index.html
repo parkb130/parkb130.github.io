@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <script src="underscore-min.js"></script>
+        <script src="pokemon.js"></script>
+    </head>
+
+    <body>
+        <div id="controls">
+            <label>sort by...</label>
+            <select id="sort">
+                <option>Number</option>
+                <option>Name</option>
+            </select>
+
+            <label>filter by...</label>
+            <select id="filter">
+                <option>None</option>
+                <option>Bug</option>
+                <option>Electric</option>
+                <option>Fighting</option>
+                <option>Fire</option>
+                <option>Grass</option>
+                <option>Ice</option>
+                <option>Poison</option>
+                <option>Psychic</option>
+                <option>Water</option>
+            </select>
+        </div>
+
+        <div id="holder">
+        </div>
+
+        <script>
+            var holder = document.getElementById("holder");
+            var sort = "Number";
+            var filter = "None";
+
+            function emptyHolder() {
+                holder.innerHTML = "";
+            }
+
+            function renderArray(arr) {
+                for (var i = 0; i < arr.length; i++) {
+                    var item = arr[i];
+
+                    var newElement = document.createElement("div");
+                    newElement.innerHTML = "<h1>" + item.id + ": " + item.name + "</h1>";
+
+                    holder.appendChild(newElement);
+                }
+            }
+
+            function update() {
+                console.log(sort, filter);
+
+                var sorted = _.sortBy(pokemon, function(p) {
+                    if (sort == "Name") {
+                        return p.name;
+                    } else if (sort == "Number") {
+                        return p.id;
+                    }
+                });
+
+                var filtered = _.filter(sorted, function(p) {
+                    if (filter == "None") {
+                        return true;
+                    } else {
+                        return p.type.indexOf(filter) >= 0;
+                    }
+                });
+
+                emptyHolder();
+                renderArray(filtered);
+            }
+
+            document.getElementById("sort").addEventListener("change", function(e) {
+                sort = e.target.value;
+                update();
+            });
+
+            document.getElementById("filter").addEventListener("change", function(e) {
+                filter = e.target.value;
+                update();
+            });
+
+            update();
+        </script>
+    </body>
+</html>
