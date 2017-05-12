@@ -15,9 +15,10 @@ video {
 }
 
 .headtitle {
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
   font-family: Futura;
+  text-decoration: underline;
 }
 
 #portfolio {  
