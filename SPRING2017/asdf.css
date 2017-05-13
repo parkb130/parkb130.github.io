@@ -1,0 +1,27 @@
+body {
+	font-family: Futura
+;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+hr {
+  color: white
+}
+
+body {
+  background-image: url('https://66.media.tumblr.com/4892d8de107396d8999edebe2a771af8/tumblr_nzjc3gMDrE1sqrnyro1_500.gif');
+  background-color: black
+}
+
+a {
+  color: white
+}
